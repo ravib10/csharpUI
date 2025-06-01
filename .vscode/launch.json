@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Testing with test2 tag",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "dotnet",
+      "args": [
+        "test",
+        "${workspaceFolder}/sampleProject.csproj",
+        "--filter",
+        "TestCategory=test2"
+        
+      ],
+       "env": {
+        "browser": "firefox",
+        "ENVIRONMENT": "qa"
+      },
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

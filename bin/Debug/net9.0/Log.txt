@@ -1,0 +1,20 @@
+5/30/2025 4:09:22 PM LivingDoc:DataCollector File '/Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/TestExecution.json' created
+5/30/2025 4:09:22 PM LivingDocTestExecution Exception Parser errors:
+(2:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Feature: 1. Validate Presence of all elements'
+(4:3): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Background:'
+(5:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Given I open "chrome" browser'
+(6:5): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'And I am on the Home Page of test Website'
+(9:3): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'Scenario: Validate all fields,checkboxes, radio buttons, Submit button and hyperlinks are appearing on the page.'
+(10:5): expected: #TagLine, #FeatureLine, #Comment, #Empty, got 'Then Verify following are appearing on the page or not'
+(11:7): expected: #TagLine, #FeatureLine, #Comment, #Empty, got '| Fields          |'
+(12:7): expected: #TagLine, #FeatureLine, #Comment, #Empty, got '| Text input          |'
+(13:7): expected: #TagLine, #FeatureLine, #Comment, #Empty, got '| Password            |'
+(14:7): expected: #TagLine, #FeatureLine, #Comment, #Empty, got '| Textarea            |'
+(15:7): expected: #TagLine, #FeatureLine, #Comment, #Empty, got '| Disabled input      |'    at Gherkin.Parser`1.AddError(ParserContext context, ParserException error)
+   at Gherkin.Parser`1.MatchTokenAt_2(Token token, ParserContext context)
+   at Gherkin.Parser`1.MatchToken(Int32 state, Token token, ParserContext context)
+   at Gherkin.Parser`1.Parse(ITokenScanner tokenScanner, ITokenMatcher tokenMatcher)
+   at databinding.LivingDoc.ExecutionDataCollector.Parser.LivingDocParser.ParseFeatureFileContent(String featureFileContent, String defaultLanguage)
+   at databinding.LivingDoc.ExecutionDataCollector.Parser.LivingDocParser.Parse(String rootNodeTitle, String projectLanguage, String workItemPrefix, String workItemUrlTemplate)
+   at databinding.LivingDoc.ExecutionDataCollector.ReportGenerator.Generate(GeneratorSource source, LivingDocExecutionDataCollectorConfiguration config)
+   at databinding.LivingDoc.ExecutionDataCollector.FeatureDataGenerator.GenerateFeatureData(List`1 executionResults)

@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <IsTestProject>true</IsTestProject>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <!-- <ItemGroup>
+    <Compile Include="Logs/logfile.log" />
+  </ItemGroup> -->
+
+<ItemGroup>
+  <None Update="Support/log4net.config">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
+</ItemGroup>
+
+  <ItemGroup>
+
+     <PackageReference Include="databinding.LivingDoc.ExecutionDataCollector" Version="6.3.2" />
+     <PackageReference Include="ExecuteAutomation.Reqnroll.Dynamics" Version="1.1.2" />
+     <PackageReference Include="FluentAssertions" Version="8.2.0" />
+     <PackageReference Include="log4net" Version="3.1.0" />
+     <PackageReference Include="Microsoft.Build.Framework" Version="17.14.8" />
+     <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.5" />
+     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.5" />
+     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.5" />
+     <PackageReference Include="NUnit" Version="4.3.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="5.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="Reqnroll" Version="2.4.1" />
+  <PackageReference Include="Reqnroll.NUnit" Version="2.4.1" />
+    <PackageReference Include="Reqnroll.Tools.MsBuild.Generation" Version="2.4.1" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.32.0" />
+    <PackageReference Include="Selenium.Support" Version="4.32.0" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <!-- <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" /> -->
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.5" />
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.14.1" />
+    <PackageReference Include="ExtentReports" Version="5.0.4" />
+    <PackageReference Include="WebDriverManager" Version="2.17.5" />
+    
+  </ItemGroup>
+
+
+ <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+<!-- this is the name of config / property file -->
+    <Copy SourceFiles="App.config" DestinationFiles="$(OutDir)\testhost.dll.config" />
+  </Target>
+
+  <!-- this will create the folders for you -->
+   <ItemGroup>
+    <Folder Include="Drivers/" />
+    <Folder Include="ExtentReports/" />
+    <Folder Include="Features/" />
+    <Folder Include="Snapshots/" />
+    <Folder Include="Support/" />
+  </ItemGroup>
+
+</Project>

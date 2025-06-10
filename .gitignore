@@ -3,4 +3,4 @@ ExtentReports/
 Snapshots/
 bin/
 obj/
-*.log
+logfile.log

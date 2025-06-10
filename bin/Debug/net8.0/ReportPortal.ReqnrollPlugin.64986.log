@@ -1,0 +1,69 @@
+ReportPortalHooks Error: 0 : 09:05:05.4017820 : 1-testhost : System.Collections.Generic.KeyNotFoundException: Property 'Server:Url' not found in the configuration. Make sure you have configured it properly.
+   at ReportPortal.Shared.Configuration.Configuration.GetValue[T](String property)
+   at ReportPortal.Shared.Reporter.Http.ClientServiceBuilder.Build()
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.Initialize()
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeTestRun()
+ReportPortalHooks Error: 0 : 09:05:05.5080910 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:05.5080920 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:05.5080940 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:07.9411970 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:07.9412040 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:07.9412130 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:07.9446880 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:07.9446970 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:07.9447330 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.3789890 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.3841150 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.4773160 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.4822620 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.4919200 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.4927810 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.5231500 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.5235950 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.5280020 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.5284710 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.5513430 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.6503010 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.6511480 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.6696430 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.6703730 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.6844150 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.7048290 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.7061900 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.7222260 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.7227960 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.7722310 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.7731870 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.BeforeStep(FeatureContext featureContext, ScenarioContext scenarioContext)
+ReportPortalHooks Error: 0 : 09:05:09.7758760 : 1-testhost : System.NullReferenceException: Object reference not set to an instance of an object.
+   at ReportPortal.ReqnrollPlugin.ReportPortalHooks.AfterStep(FeatureContext featureContext, ScenarioContext scenarioContext)

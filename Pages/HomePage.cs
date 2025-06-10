@@ -14,6 +14,11 @@ namespace sampleProject.Pages;
 
 public class HomePage
 {
+    //[FindsBy] are depricated in latest selenium. Hence following commented way is recommanded. Write it after constructor
+    //private IWebElement Username => _driver.FindElement(By.Id("username"));
+    // private IWebElement Password => _driver.FindElement(By.Name("password"));
+    // private IWebElement LoginButton => _driver.FindElement(By.CssSelector("#loginButton"));
+
     [FindsBy(How = How.Name, Using = "my-text")]
     public IWebElement textInput;
 
@@ -65,10 +70,12 @@ public class HomePage
     IWebDriver driver = stepBase.GetDriver();
     bool isElementPresent = false;
     bool isElementInCorrectState = false;
+    // private readonly IWebDriver _driver;
 
     public HomePage()
     {
         PageFactory.InitElements(stepBase.GetDriver(), this);
+        // _driver = stepBase.GetDriver();
     }
 
     public bool validateFieldsPresence(String fieldName)

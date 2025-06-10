@@ -21,8 +21,11 @@
           "Microsoft.NET.Test.Sdk": "17.13.0",
           "NUnit": "4.3.2",
           "NUnit3TestAdapter": "5.0.0",
+          "ReportPortal.Reqnroll": "1.3.0",
           "Reqnroll": "2.4.1",
           "Reqnroll.NUnit": "2.4.1",
+          "Reqnroll.SpecFlowCompatibility": "2.4.1",
+          "Reqnroll.SpecFlowCompatibility.Actions.Configuration": "0.2.6",
           "Reqnroll.Tools.MsBuild.Generation": "2.4.1",
           "Selenium.Support": "4.32.0",
           "Selenium.WebDriver": "4.32.0",
@@ -1034,6 +1037,37 @@
           }
         }
       },
+      "ReportPortal.Client/3.10.0": {
+        "runtime": {
+          "lib/net6.0/ReportPortal.Client.dll": {
+            "assemblyVersion": "3.10.0.0",
+            "fileVersion": "3.10.0.0"
+          }
+        }
+      },
+      "ReportPortal.Reqnroll/1.3.0": {
+        "dependencies": {
+          "ReportPortal.Shared": "3.10.0",
+          "Reqnroll": "2.4.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ReportPortal.ReqnrollPlugin.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
+          }
+        }
+      },
+      "ReportPortal.Shared/3.10.0": {
+        "dependencies": {
+          "ReportPortal.Client": "3.10.0"
+        },
+        "runtime": {
+          "lib/net6.0/ReportPortal.Shared.dll": {
+            "assemblyVersion": "3.10.0.0",
+            "fileVersion": "3.10.0.0"
+          }
+        }
+      },
       "Reqnroll/2.4.1": {
         "dependencies": {
           "Cucumber.CucumberExpressions": "17.1.0",
@@ -1058,6 +1092,30 @@
           "lib/netstandard2.0/Reqnroll.NUnit.ReqnrollPlugin.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Reqnroll.SpecFlowCompatibility/2.4.1": {
+        "dependencies": {
+          "Reqnroll": "2.4.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Reqnroll.SpecFlowCompatibility.ReqnrollPlugin.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Reqnroll.SpecFlowCompatibility.Actions.Configuration/0.2.6": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "9.0.5",
+          "Microsoft.Extensions.Configuration.Json": "9.0.5",
+          "Reqnroll": "2.4.1"
+        },
+        "runtime": {
+          "lib/net6.0/Reqnroll.Actions.Configuration.ReqnrollPlugin.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.6.57151"
           }
         }
       },
@@ -2191,6 +2249,27 @@
       "path": "razorengine.netcore.nixfix/1.0.1",
       "hashPath": "razorengine.netcore.nixfix.1.0.1.nupkg.sha512"
     },
+    "ReportPortal.Client/3.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VLna89sFUXxL8DRGYqTKgPF+nOcgGmsLtUZD61cB0YlL2fxhRt7LVOs2yw8vo+9WHA9gLgMEwWdMK+1U/FC49w==",
+      "path": "reportportal.client/3.10.0",
+      "hashPath": "reportportal.client.3.10.0.nupkg.sha512"
+    },
+    "ReportPortal.Reqnroll/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-douK+ZEDDzlqNtcnIlpi/T9cmUlrpxa+JrECRpREpQdtqu5sweb4tkQj0HZsSxBobQl+gDqf2PP0XCIFydZhPA==",
+      "path": "reportportal.reqnroll/1.3.0",
+      "hashPath": "reportportal.reqnroll.1.3.0.nupkg.sha512"
+    },
+    "ReportPortal.Shared/3.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O/3ZMUa8IP4YEhtXKWfEMFt6UG9EOWyzwFlG086HVxqyyEvWWEMRJGLqWPJ5Fhq4zR0aQvEfj6V3k64mUaZbTw==",
+      "path": "reportportal.shared/3.10.0",
+      "hashPath": "reportportal.shared.3.10.0.nupkg.sha512"
+    },
     "Reqnroll/2.4.1": {
       "type": "package",
       "serviceable": true,
@@ -2204,6 +2283,20 @@
       "sha512": "sha512-IbP1uVirMVpopeRwjvtz2b0PO9oQtHcDnAQigTpZY9lxSRYBycQSYQaZ6fbkkg/mG/azkPPGV3YIjNILQ8jWrw==",
       "path": "reqnroll.nunit/2.4.1",
       "hashPath": "reqnroll.nunit.2.4.1.nupkg.sha512"
+    },
+    "Reqnroll.SpecFlowCompatibility/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ecf9GlD6Ru8uiBvEvEZdlSfxV/zBKYKYTSqHBOBj9tUBl/Gl04p3w1RfmuMwC6wCfB5Qp/dm9uALqcoRLS8biQ==",
+      "path": "reqnroll.specflowcompatibility/2.4.1",
+      "hashPath": "reqnroll.specflowcompatibility.2.4.1.nupkg.sha512"
+    },
+    "Reqnroll.SpecFlowCompatibility.Actions.Configuration/0.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wpZEokKwPq51ULTdFZsHBl1j0zLAsb+2Tu5LcQD78+LZOW27Gt4oZx+DiSRJqTIWPE62GMi9g7JTsCsQh+PcDw==",
+      "path": "reqnroll.specflowcompatibility.actions.configuration/0.2.6",
+      "hashPath": "reqnroll.specflowcompatibility.actions.configuration.0.2.6.nupkg.sha512"
     },
     "Reqnroll.Tools.MsBuild.Generation/2.4.1": {
       "type": "package",

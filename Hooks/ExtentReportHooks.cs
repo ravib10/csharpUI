@@ -364,6 +364,7 @@ using sampleProject.StepDefinitions;
 using OpenQA.Selenium.Support.Extensions;
 using log4net;
 using log4net.Config;
+using AventStack.ExtentReports.MarkupUtils;
 
 [Binding]
 public class ExtentReportHooks
@@ -371,6 +372,7 @@ public class ExtentReportHooks
     private static readonly object _lock = new object();
     private static ExtentReports _extent;
     private static ExtentSparkReporter _htmlReporter;
+    public string customisedMessage;
 
     // Stores one feature node per feature title
     private static ConcurrentDictionary<string, ExtentTest> _featureNodes = new ConcurrentDictionary<string, ExtentTest>();
@@ -381,6 +383,9 @@ public class ExtentReportHooks
 
     private readonly ScenarioContext _scenarioContext;
     private readonly FeatureContext _featureContext;
+    public void message(string message){
+        customisedMessage=message;
+    }
 
     public ExtentReportHooks(ScenarioContext scenarioContext, FeatureContext featureContext)
     {
@@ -443,12 +448,29 @@ public class ExtentReportHooks
 
   log.Info("Executing feature : " + featureTitle +".   Executing Scenario :"+ scenarioTitle+".                        Exectuting step" +stepText);
         if (_scenarioContext.TestError == null)
-        {
-            _scenarioNode.Value.CreateNode(new GherkinKeyword(stepType), stepText);
+
+        {//if you want to pass any additional message to your step, use following
+            _scenarioNode.Value.CreateNode(new GherkinKeyword(stepType), stepText).Pass("You can pass your customised message or leave it blank");
+           
+           //if you don't want to pass a message to your step, then use following
+           //_scenarioNode.Value.CreateNode(new GherkinKeyword(stepType), stepText)
+
+           //following will add the details in the log file.
             log.Info("step pass " + stepText);
             
             
         }
+        else if (_scenarioContext.ScenarioExecutionStatus == ScenarioExecutionStatus.StepDefinitionPending || _scenarioContext.TestError is PendingStepException)
+{
+    _scenarioNode.Value
+        .CreateNode(new GherkinKeyword(stepType), stepText)
+        .Fail("Step definition is pending or not implemented.");
+
+    // log.Error("Pending step failed: " + stepText);
+
+    // Forcefully fail the test
+    throw new Exception("Pending step encountered: " + stepText);
+}
         else
         {
             // var mediaEntity = CaptureScreenshotAndReturnModel(_scenarioContext.ScenarioInfo.Title);
@@ -456,7 +478,7 @@ public class ExtentReportHooks
             //     .CreateNode(new GherkinKeyword(stepType), stepText)
             //     .Fail(_scenarioContext.TestError.Message, mediaEntity);
 
-            log.Error("step fail " + stepText);
+            log.Error("step fail" + stepText);
             //=========================
             DateTime currentTime = DateTime.Now;
             String fileName = currentTime.ToString("yyyy-MM-dd_HH-mm-ss") + ".jpg";
@@ -490,6 +512,31 @@ public class ExtentReportHooks
     [AfterScenario]
     public void AfterScenario()
     {
+      var scenarioStatus = _scenarioContext.ScenarioExecutionStatus;
+
+    if (scenarioStatus == ScenarioExecutionStatus.StepDefinitionPending||_scenarioContext.TestError is PendingStepException)
+    {
+        string message = $"❌ Scenario '{scenarioTitle}' failed due to missing/unimplemented step definitions.";
+        _scenarioNode.Value.Fail(message);
+        log.Error(message);
+        throw new Exception(message);
+    }
+    else if (_scenarioContext.TestError != null)
+    {
+        string errorMessage = $"❌ Scenario '{scenarioTitle}' failed with error: {_scenarioContext.TestError.Message}";
+        string stackTrace = _scenarioContext.TestError.StackTrace;
+
+        _scenarioNode.Value.Fail(errorMessage);
+        _scenarioNode.Value.Info($"📌 Stack Trace:<pre>{stackTrace}</pre>");
+        log.Error(errorMessage);
+    }
+    else
+    {
+        string passMessage = $"✅ Scenario '{scenarioTitle}' executed successfully.";
+        _scenarioNode.Value.Pass(passMessage);
+        _scenarioNode.Value.Info("ℹ️ This is an extra note in the report for passed scenario.");
+        log.Info(passMessage);
+    }
         // Optional: cleanup or flush scenario-specific logs
     }
 }

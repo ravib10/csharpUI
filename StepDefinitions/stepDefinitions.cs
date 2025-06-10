@@ -39,9 +39,11 @@ namespace sampleProject.StepDefinitions
     HomePage home;
     private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
+
         [BeforeScenario]
         public void before()
         {
+        
             // this._scenarioContext = scenario1;
             Console.WriteLine("he he he");
             var logRepository = LogManager.GetRepository(System.Reflection.Assembly.GetEntryAssembly());
@@ -85,7 +87,7 @@ public void GivenIamontheHomePageoftestWebsite()
 	openUrl(siteUrl);
 }
 
-        [Given(@"I open ""(.*)"" browser")]
+        [Given(@"I open (.*) browser")]
         public void GivenIopenbrowser(string browser)
         {
             openBrowser(browser);
@@ -147,6 +149,12 @@ Assert.That(home.validateLinkPresence(linkName));
     }
 
 
-
+  [Then(@"i am testing it")]
+    public void Iamtestingit()
+    {
+        //in reqnroll, pending or skipped steps doesn't fall in executed step hence afterstep won't consider as a step and it
+        // will always appear as pass. to make it fail, throw new Exception("your message");
+throw new PendingStepException("This step is intentionally skipped because ");
+    }
 		}
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "x7qRLEOrt/A=",
+  "dgSpecHash": "OQYI91Cwkhc=",
   "success": true,
   "projectFilePath": "/Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/sampleProject.csproj",
   "expectedPackageFiles": [
@@ -54,8 +54,13 @@
     "/Users/ravinder.budhawan/.nuget/packages/nunit/4.3.2/nunit.4.3.2.nupkg.sha512",
     "/Users/ravinder.budhawan/.nuget/packages/nunit3testadapter/5.0.0/nunit3testadapter.5.0.0.nupkg.sha512",
     "/Users/ravinder.budhawan/.nuget/packages/razorengine.netcore.nixfix/1.0.1/razorengine.netcore.nixfix.1.0.1.nupkg.sha512",
+    "/Users/ravinder.budhawan/.nuget/packages/reportportal.client/3.10.0/reportportal.client.3.10.0.nupkg.sha512",
+    "/Users/ravinder.budhawan/.nuget/packages/reportportal.reqnroll/1.3.0/reportportal.reqnroll.1.3.0.nupkg.sha512",
+    "/Users/ravinder.budhawan/.nuget/packages/reportportal.shared/3.10.0/reportportal.shared.3.10.0.nupkg.sha512",
     "/Users/ravinder.budhawan/.nuget/packages/reqnroll/2.4.1/reqnroll.2.4.1.nupkg.sha512",
     "/Users/ravinder.budhawan/.nuget/packages/reqnroll.nunit/2.4.1/reqnroll.nunit.2.4.1.nupkg.sha512",
+    "/Users/ravinder.budhawan/.nuget/packages/reqnroll.specflowcompatibility/2.4.1/reqnroll.specflowcompatibility.2.4.1.nupkg.sha512",
+    "/Users/ravinder.budhawan/.nuget/packages/reqnroll.specflowcompatibility.actions.configuration/0.2.6/reqnroll.specflowcompatibility.actions.configuration.0.2.6.nupkg.sha512",
     "/Users/ravinder.budhawan/.nuget/packages/reqnroll.tools.msbuild.generation/2.4.1/reqnroll.tools.msbuild.generation.2.4.1.nupkg.sha512",
     "/Users/ravinder.budhawan/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/ravinder.budhawan/.nuget/packages/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

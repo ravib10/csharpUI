@@ -96,6 +96,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "ReportPortal.Reqnroll": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
             "Reqnroll": {
               "target": "Package",
               "version": "[2.4.1, )"
@@ -103,6 +107,14 @@
             "Reqnroll.NUnit": {
               "target": "Package",
               "version": "[2.4.1, )"
+            },
+            "Reqnroll.SpecFlowCompatibility": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Reqnroll.SpecFlowCompatibility.Actions.Configuration": {
+              "target": "Package",
+              "version": "[0.2.6, )"
             },
             "Reqnroll.Tools.MsBuild.Generation": {
               "target": "Package",

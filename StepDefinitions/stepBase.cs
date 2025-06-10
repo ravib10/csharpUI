@@ -26,33 +26,47 @@ public class stepBase
 
 
 public void openBrowser(String browserType) {
-    // browserType = TestContext.Parameters["browser"] ?? "chrome";
-    //if you want to read values from config (launch.json) file, then use following command
-    //  browserType = Environment.GetEnvironmentVariable("browser")??"chrome";
-          //if you want to run a test and pass browser value through commandline, then use following 
-    browserType = TestContext.Parameters.Get("browser", browserType);
-    // if (browserType == null)
-    //     browserType = ConfigurationManager.AppSettings["browser"];
-    // Console.WriteLine("value is " + browserType);
-    switch (browserType)
-    {
-      case "chrome":
-        // new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
-        new DriverManager().SetUpDriver(new ChromeConfig());
-        driver.Value = new ChromeDriver();
-        Console.WriteLine("value is " + browserType);
-        break;
-      case "firefox":
 
-        driver.Value = new FirefoxDriver();
-        Console.WriteLine("value is " + browserType);
-        break;
+        // browserType = TestContext.Parameters["browser"] ?? "chrome";
+        //if you want to read values from config (launch.json, which is saved inside .vscode/location.) file, then use following command
+        //  browserType = Environment.GetEnvironmentVariable("browser")??"browserType";
 
-    }
+        //if you want to run a test and pass browser value through commandline, then use following 
+        browserType = TestContext.Parameters.Get("browser", browserType);
+        // if (browserType == null)
+        //     browserType = ConfigurationManager.AppSettings["browser"];
+        // Console.WriteLine("value is " + browserType);
+        // Console.WriteLine("location is ha ha ha"+System.Reflection.Assembly.GetExecutingAssembly().Location);
+        // Console.WriteLine("MY_TEST_VAR_123 he he he = " + Environment.GetEnvironmentVariable("MY_TEST_VAR_123"));
+
+        // foreach (System.Collections.DictionaryEntry de in Environment.GetEnvironmentVariables())
+        // {
+        //     string keys = $"{de.Key}";
+        //     string value = $"{de.Value}";
+
+
+        //     Console.WriteLine("key is " + $"{de.Key} = {de.Value}");
+        // }
+
+        switch (browserType)
+        {
+            case "chrome":
+                // new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
+                new DriverManager().SetUpDriver(new ChromeConfig());
+                driver.Value = new ChromeDriver();
+                Console.WriteLine("value is " + browserType);
+                break;
+            case "firefox":
+
+                driver.Value = new FirefoxDriver();
+                Console.WriteLine("value is " + browserType);
+                break;
+
+        }
           Console.WriteLine("value is " + browserType);
 
 
-        // setWebDriver(driver.Value);
+    // setWebDriver(driver.Value);
 
         GetDriver().Manage().Window.Maximize();
         GetDriver().Manage().Timeouts().ImplicitWait= TimeSpan.FromSeconds(TIMEOUT);

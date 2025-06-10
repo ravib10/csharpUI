@@ -1,3 +1,5 @@
+/Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/Reqnroll.Actions.Configuration.ReqnrollPlugin.dll
+/Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/Reqnroll.SpecFlowCompatibility.ReqnrollPlugin.dll
 /Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/Reqnroll.NUnit.ReqnrollPlugin.dll
 /Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/selenium-manager/linux/selenium-manager
 /Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/selenium-manager/macos/selenium-manager
@@ -62,6 +64,9 @@
 /Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/nunit.framework.dll
 /Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/nunit.framework.legacy.dll
 /Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/RazorEngine.NetCore.dll
+/Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/ReportPortal.Client.dll
+/Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/ReportPortal.ReqnrollPlugin.dll
+/Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/ReportPortal.Shared.dll
 /Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/Reqnroll.dll
 /Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/WebDriver.Support.dll
 /Users/ravinder.budhawan/Desktop/Octopus/Automation/sampleProject/sampleProject/bin/Debug/net9.0/WebDriver.dll

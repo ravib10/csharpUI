@@ -1298,6 +1298,59 @@
           "lib/netcoreapp3.1/RazorEngine.NetCore.dll": {}
         }
       },
+      "ReportPortal.Client/3.10.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ReportPortal.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ReportPortal.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ReportPortal.Reqnroll/1.3.0": {
+        "type": "package",
+        "dependencies": {
+          "ReportPortal.Shared": "3.10.0",
+          "Reqnroll": "2.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/ReportPortal.ReqnrollPlugin.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ReportPortal.ReqnrollPlugin.dll": {
+            "related": ".pdb"
+          }
+        },
+        "build": {
+          "build/netstandard2.0/ReportPortal.Reqnroll.props": {},
+          "build/netstandard2.0/ReportPortal.Reqnroll.targets": {}
+        }
+      },
+      "ReportPortal.Shared/3.10.0": {
+        "type": "package",
+        "dependencies": {
+          "ReportPortal.Client": "3.10.0"
+        },
+        "compile": {
+          "lib/net6.0/ReportPortal.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ReportPortal.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/net6.0/ReportPortal.Shared.targets": {}
+        }
+      },
       "Reqnroll/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -1336,6 +1389,44 @@
         "build": {
           "build/Reqnroll.NUnit.props": {},
           "build/Reqnroll.NUnit.targets": {}
+        }
+      },
+      "Reqnroll.SpecFlowCompatibility/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Reqnroll": "[2.4.1]"
+        },
+        "compile": {
+          "lib/netstandard2.0/Reqnroll.SpecFlowCompatibility.ReqnrollPlugin.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Reqnroll.SpecFlowCompatibility.ReqnrollPlugin.dll": {}
+        },
+        "build": {
+          "build/Reqnroll.SpecFlowCompatibility.props": {},
+          "build/Reqnroll.SpecFlowCompatibility.targets": {}
+        }
+      },
+      "Reqnroll.SpecFlowCompatibility.Actions.Configuration/0.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "5.0.0",
+          "Microsoft.Extensions.Configuration.Json": "5.0.0",
+          "Reqnroll": "2.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Reqnroll.Actions.Configuration.ReqnrollPlugin.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Reqnroll.Actions.Configuration.ReqnrollPlugin.dll": {
+            "related": ".pdb"
+          }
+        },
+        "build": {
+          "build/Reqnroll.SpecFlowCompatibility.Actions.Configuration.props": {},
+          "build/Reqnroll.SpecFlowCompatibility.Actions.Configuration.targets": {}
         }
       },
       "Reqnroll.Tools.MsBuild.Generation/2.4.1": {
@@ -4709,6 +4800,67 @@
         "razorengine.netcore.nixfix.nuspec"
       ]
     },
+    "ReportPortal.Client/3.10.0": {
+      "sha512": "VLna89sFUXxL8DRGYqTKgPF+nOcgGmsLtUZD61cB0YlL2fxhRt7LVOs2yw8vo+9WHA9gLgMEwWdMK+1U/FC49w==",
+      "type": "package",
+      "path": "reportportal.client/3.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.png",
+        "README.md",
+        "lib/net462/ReportPortal.Client.dll",
+        "lib/net462/ReportPortal.Client.xml",
+        "lib/net6.0/ReportPortal.Client.dll",
+        "lib/net6.0/ReportPortal.Client.xml",
+        "lib/netstandard2.0/ReportPortal.Client.dll",
+        "lib/netstandard2.0/ReportPortal.Client.xml",
+        "reportportal.client.3.10.0.nupkg.sha512",
+        "reportportal.client.nuspec"
+      ]
+    },
+    "ReportPortal.Reqnroll/1.3.0": {
+      "sha512": "douK+ZEDDzlqNtcnIlpi/T9cmUlrpxa+JrECRpREpQdtqu5sweb4tkQj0HZsSxBobQl+gDqf2PP0XCIFydZhPA==",
+      "type": "package",
+      "path": "reportportal.reqnroll/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.png",
+        "build/net462/ReportPortal.Reqnroll.props",
+        "build/net462/ReportPortal.Reqnroll.targets",
+        "build/netstandard2.0/ReportPortal.Reqnroll.props",
+        "build/netstandard2.0/ReportPortal.Reqnroll.targets",
+        "lib/net462/ReportPortal.ReqnrollPlugin.dll",
+        "lib/net462/ReportPortal.ReqnrollPlugin.pdb",
+        "lib/netstandard2.0/ReportPortal.ReqnrollPlugin.dll",
+        "lib/netstandard2.0/ReportPortal.ReqnrollPlugin.pdb",
+        "reportportal.reqnroll.1.3.0.nupkg.sha512",
+        "reportportal.reqnroll.nuspec"
+      ]
+    },
+    "ReportPortal.Shared/3.10.0": {
+      "sha512": "O/3ZMUa8IP4YEhtXKWfEMFt6UG9EOWyzwFlG086HVxqyyEvWWEMRJGLqWPJ5Fhq4zR0aQvEfj6V3k64mUaZbTw==",
+      "type": "package",
+      "path": "reportportal.shared/3.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.png",
+        "build/ReportPortal.Shared.props",
+        "build/net462/ReportPortal.Shared.targets",
+        "build/net6.0/ReportPortal.Shared.targets",
+        "build/netstandard2.0/ReportPortal.Shared.targets",
+        "lib/net462/ReportPortal.Shared.dll",
+        "lib/net462/ReportPortal.Shared.xml",
+        "lib/net6.0/ReportPortal.Shared.dll",
+        "lib/net6.0/ReportPortal.Shared.xml",
+        "lib/netstandard2.0/ReportPortal.Shared.dll",
+        "lib/netstandard2.0/ReportPortal.Shared.xml",
+        "reportportal.shared.3.10.0.nupkg.sha512",
+        "reportportal.shared.nuspec"
+      ]
+    },
     "Reqnroll/2.4.1": {
       "sha512": "Ui229q21Kmkrv3L89THgsxGMXooJGK5OrFPLvYDXfE2nO/u4tqYsbmMRddyEE3fsR40IDP++HsRrDxlkR6reVw==",
       "type": "package",
@@ -4748,6 +4900,54 @@
         "lib/netstandard2.0/Reqnroll.NUnit.ReqnrollPlugin.dll",
         "reqnroll.nunit.2.4.1.nupkg.sha512",
         "reqnroll.nunit.nuspec"
+      ]
+    },
+    "Reqnroll.SpecFlowCompatibility/2.4.1": {
+      "sha512": "ecf9GlD6Ru8uiBvEvEZdlSfxV/zBKYKYTSqHBOBj9tUBl/Gl04p3w1RfmuMwC6wCfB5Qp/dm9uALqcoRLS8biQ==",
+      "type": "package",
+      "path": "reqnroll.specflowcompatibility/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/Reqnroll.SpecFlowCompatibility.props",
+        "build/Reqnroll.SpecFlowCompatibility.targets",
+        "build/net462/Reqnroll.SpecFlowCompatibility.Generator.ReqnrollPlugin.dll",
+        "build/net462/Reqnroll.SpecFlowCompatibility.ReqnrollPlugin.dll",
+        "build/netstandard2.0/Reqnroll.SpecFlowCompatibility.Generator.ReqnrollPlugin.deps.json",
+        "build/netstandard2.0/Reqnroll.SpecFlowCompatibility.Generator.ReqnrollPlugin.dll",
+        "build/netstandard2.0/Reqnroll.SpecFlowCompatibility.ReqnrollPlugin.dll",
+        "images/reqnroll-icon.png",
+        "lib/net462/Reqnroll.SpecFlowCompatibility.ReqnrollPlugin.dll",
+        "lib/netstandard2.0/Reqnroll.SpecFlowCompatibility.ReqnrollPlugin.dll",
+        "reqnroll.specflowcompatibility.2.4.1.nupkg.sha512",
+        "reqnroll.specflowcompatibility.nuspec"
+      ]
+    },
+    "Reqnroll.SpecFlowCompatibility.Actions.Configuration/0.2.6": {
+      "sha512": "wpZEokKwPq51ULTdFZsHBl1j0zLAsb+2Tu5LcQD78+LZOW27Gt4oZx+DiSRJqTIWPE62GMi9g7JTsCsQh+PcDw==",
+      "type": "package",
+      "path": "reqnroll.specflowcompatibility.actions.configuration/0.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Reqnroll.SpecFlowCompatibility.Actions.Configuration.props",
+        "build/Reqnroll.SpecFlowCompatibility.Actions.Configuration.targets",
+        "build/net471/Reqnroll.Actions.Configuration.Generation.ReqnrollPlugin.dll",
+        "build/net471/Reqnroll.Actions.Configuration.Generation.ReqnrollPlugin.pdb",
+        "build/net471/Reqnroll.Actions.Configuration.ReqnrollPlugin.dll",
+        "build/net471/Reqnroll.Actions.Configuration.ReqnrollPlugin.pdb",
+        "build/net6.0/Reqnroll.Actions.Configuration.Generation.ReqnrollPlugin.deps.json",
+        "build/net6.0/Reqnroll.Actions.Configuration.Generation.ReqnrollPlugin.dll",
+        "build/net6.0/Reqnroll.Actions.Configuration.Generation.ReqnrollPlugin.pdb",
+        "build/net6.0/Reqnroll.Actions.Configuration.ReqnrollPlugin.dll",
+        "build/net6.0/Reqnroll.Actions.Configuration.ReqnrollPlugin.pdb",
+        "lib/net471/Reqnroll.Actions.Configuration.ReqnrollPlugin.dll",
+        "lib/net471/Reqnroll.Actions.Configuration.ReqnrollPlugin.pdb",
+        "lib/net6.0/Reqnroll.Actions.Configuration.ReqnrollPlugin.dll",
+        "lib/net6.0/Reqnroll.Actions.Configuration.ReqnrollPlugin.pdb",
+        "reqnroll.specflowcompatibility.actions.configuration.0.2.6.nupkg.sha512",
+        "reqnroll.specflowcompatibility.actions.configuration.nuspec"
       ]
     },
     "Reqnroll.Tools.MsBuild.Generation/2.4.1": {
@@ -8943,8 +9143,11 @@
       "Microsoft.NET.Test.Sdk >= 17.13.0",
       "NUnit >= 4.3.2",
       "NUnit3TestAdapter >= 5.0.0",
+      "ReportPortal.Reqnroll >= 1.3.0",
       "Reqnroll >= 2.4.1",
       "Reqnroll.NUnit >= 2.4.1",
+      "Reqnroll.SpecFlowCompatibility >= 2.4.1",
+      "Reqnroll.SpecFlowCompatibility.Actions.Configuration >= 0.2.6",
       "Reqnroll.Tools.MsBuild.Generation >= 2.4.1",
       "Selenium.Support >= 4.32.0",
       "Selenium.WebDriver >= 4.32.0",
@@ -9049,6 +9252,10 @@
             "target": "Package",
             "version": "[5.0.0, )"
           },
+          "ReportPortal.Reqnroll": {
+            "target": "Package",
+            "version": "[1.3.0, )"
+          },
           "Reqnroll": {
             "target": "Package",
             "version": "[2.4.1, )"
@@ -9056,6 +9263,14 @@
           "Reqnroll.NUnit": {
             "target": "Package",
             "version": "[2.4.1, )"
+          },
+          "Reqnroll.SpecFlowCompatibility": {
+            "target": "Package",
+            "version": "[2.4.1, )"
+          },
+          "Reqnroll.SpecFlowCompatibility.Actions.Configuration": {
+            "target": "Package",
+            "version": "[0.2.6, )"
           },
           "Reqnroll.Tools.MsBuild.Generation": {
             "target": "Package",

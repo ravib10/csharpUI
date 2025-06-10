@@ -3,5 +3,5 @@ ExtentReports/
 Snapshots/
 bin/
 obj/
-Logs/*.log
+*.log
 .vscode/

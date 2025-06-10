@@ -8,7 +8,7 @@ Feature: 1233. erttertreValidate Presence of all elements
   Scenario: werwerValidate all fields,checkboxes, radio buttons, Submit button and hyperlinks are appearing on the page.
     Then Verify following are appearing on the page or not
       | Fields              |
-      | Text input1          |
+      | Text input         |
       | Password            |
       | Textarea            |
       | Disabled input      |

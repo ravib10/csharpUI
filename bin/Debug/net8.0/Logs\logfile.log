@@ -1,8 +1,0 @@
-2025-05-19 10:49:15,290 [NUnit.Fw.NonParallelWorker] INFO  sampleProject.StepDefinitions.stepDefinitions - yuppie
-2025-05-19 10:49:15,293 [NUnit.Fw.NonParallelWorker] DEBUG sampleProject.StepDefinitions.stepDefinitions - ms
-2025-05-19 10:50:14,673 [NUnit.Fw.NonParallelWorker] INFO  sampleProject.StepDefinitions.stepDefinitions - yuppie
-2025-05-19 10:50:14,676 [NUnit.Fw.NonParallelWorker] DEBUG sampleProject.StepDefinitions.stepDefinitions - ms
-2025-05-19 10:52:57,656 [NUnit.Fw.NonParallelWorker] INFO  sampleProject.StepDefinitions.stepDefinitions - yuppie
-2025-05-19 10:52:57,658 [NUnit.Fw.NonParallelWorker] DEBUG sampleProject.StepDefinitions.stepDefinitions - ms
-2025-05-19 10:55:27,293 [NUnit.Fw.NonParallelWorker] INFO  sampleProject.StepDefinitions.stepDefinitions - yuppie
-2025-05-19 10:55:27,295 [NUnit.Fw.NonParallelWorker] DEBUG sampleProject.StepDefinitions.stepDefinitions - ms

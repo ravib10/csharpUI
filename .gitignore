@@ -4,3 +4,4 @@ Snapshots/
 bin/
 obj/
 Logs/*.log
+.vscode/

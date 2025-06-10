@@ -1,6 +1,0 @@
-{
-    "javascript.preferGoToSourceDefinition": true,
-    "typescript.preferGoToSourceDefinition": true,
-    "editor.gotoLocation.multipleDeclarations": "peek",
-    "editor.gotoLocation.multipleDefinitions": "goto"
-}
